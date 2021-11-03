@@ -25,7 +25,7 @@ class SignInActivity : AppCompatActivity() {
     private fun initLoginBtn() {
         binding.btnLogin.setOnClickListener {
             // 유저가 항목을 다 채우지 않았을 경우
-            if(binding.etId.text.isEmpty() || binding.etPw.text.isEmpty()){
+            if(binding.etId.text.isNullOrBlank() || binding.etPw.text.isNullOrBlank()){
                 Toast.makeText(this, "로그인 실패", Toast.LENGTH_LONG).show()
             }
             // 유저가 항목을 다 채웠을 경우

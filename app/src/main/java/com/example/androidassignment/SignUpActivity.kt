@@ -21,7 +21,7 @@ class SignUpActivity : AppCompatActivity() {
     fun initJoinFinishBtn() {
         binding.btnJoinFinish.setOnClickListener {
             // 유저가 항목을 다 채우지 않았을 경우
-            if(binding.etName.text.isEmpty()|| binding.etId.text.isEmpty() || binding.etPw.text.isEmpty()){
+            if(binding.etName.text.isNullOrBlank()|| binding.etId.text.isNullOrBlank() || binding.etPw.text.isNullOrBlank()){
                 Toast.makeText(this, "입력되지 않은 정보가 있습니다.", Toast.LENGTH_LONG).show()
             }
             // 유저가 항목을 다 채웠을 경우

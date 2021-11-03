@@ -13,12 +13,12 @@ class SignInActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         binding = ActivitySignInBinding.inflate(layoutInflater)
-        setContentView(binding.root)
 
         initLoginBtn()
+
         initJoinBtn()
 
-
+        setContentView(binding.root)
 
     }
 

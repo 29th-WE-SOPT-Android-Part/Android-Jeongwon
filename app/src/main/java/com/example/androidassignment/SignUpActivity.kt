@@ -12,9 +12,10 @@ class SignUpActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         binding = ActivitySignUpBinding.inflate(layoutInflater)
-        setContentView(binding.root)
 
         initJoinFinishBtn()
+
+        setContentView(binding.root)
 
     }
 

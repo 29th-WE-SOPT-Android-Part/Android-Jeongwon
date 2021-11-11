@@ -82,9 +82,9 @@
   ```
 
 # :white_check_mark: 이번 과제를 통해 배운 내용, 성장한 내용
-:heavy_plus_sign: 피그마 디자인 레이아웃 파일에 적용하기
-:heavy_plus_sign: BottomNavigation 넣어주기
-:heavy_plus_sign: TabLayout + ViewPager2 넣어주기
+:heavy_plus_sign: 피그마 디자인 레이아웃 파일에 적용하기  
+:heavy_plus_sign: BottomNavigation 넣어주기  
+:heavy_plus_sign: TabLayout + ViewPager2 넣어주기  
 
 
 

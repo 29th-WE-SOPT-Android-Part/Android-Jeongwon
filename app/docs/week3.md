@@ -3,10 +3,17 @@
 
 
 ### :star: WEEK3
+
+# :white_check_mark: 실행화면
+<p float="left">
+<img src = "https://s7.ezgif.com/save/ezgif-7-75931ff250df.gif" width="30%" height="30%">
+</p>
+
+
 :exclamation: LEVEL1
 
 # :white_check_mark: 구현한 로직(코드)을 설명하는 내용
-## 1-1 과제에 디자인 적용하
+## 1-1 과제에 디자인 적용하기
 
 * EditText에 selector 활용하기(focus 되었을 때,안 되었을 때)-selector_et.xml
 
@@ -73,6 +80,14 @@
             binding.tvIntro.text = data.introduction
         }
   ```
+
+# :white_check_mark: 이번 과제를 통해 배운 내용, 성장한 내용
+:heavy_plus_sign: 피그마 디자인 레이아웃 파일에 적용하기
+:heavy_plus_sign: BottomNavigation 넣어주기
+:heavy_plus_sign: TabLayout + ViewPager2 넣어주기
+
+
+
   
 
 

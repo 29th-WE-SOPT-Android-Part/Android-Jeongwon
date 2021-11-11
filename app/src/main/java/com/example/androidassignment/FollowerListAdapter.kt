@@ -3,11 +3,12 @@ package com.example.androidassignment
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.example.androidassignment.databinding.ItemFollowerListBinding
 
-class FollowerAdapter : RecyclerView.Adapter<FollowerAdapter.FollowerViewHolder>() {
+class FollowerListAdapter : RecyclerView.Adapter<FollowerListAdapter.FollowerViewHolder>() {
 
-    val followerList = mutableListOf<FollowerData>()
+    val followerList = mutableListOf<FollowerListData>()
 
     override fun onCreateViewHolder(
         parent: ViewGroup,
@@ -28,7 +29,11 @@ class FollowerAdapter : RecyclerView.Adapter<FollowerAdapter.FollowerViewHolder>
 
     class FollowerViewHolder(private val binding: ItemFollowerListBinding)
         : RecyclerView.ViewHolder(binding.root) {
-        fun onBind(data : FollowerData) {
+        fun onBind(data : FollowerListData) {
+            Glide.with(binding.ivPhoto)
+                .load(data.imageUrl)
+                .circleCrop()
+                .into(binding.ivPhoto)
             binding.tvName.text = data.name
             binding.tvIntro.text = data.introduction
         }

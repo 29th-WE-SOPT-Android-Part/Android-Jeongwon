@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <ImageView
+        android:id="@+id/ivGithub"
+        android:layout_width="69dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_default="percent"
+        tools:src="@drawable/img_github" />
+
+    <TextView
+        android:id="@+id/tvGithub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:text="GitHub"
+        android:textFontWeight="700"
+        android:textColor="#F658A6"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/ivGithub"
+        app:layout_constraintStart_toStartOf="@+id/ivGithub"
+        app:layout_constraintTop_toBottomOf="@id/ivGithub" />
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tlHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:textColor="#F658A6"
+        android:textFontWeight="500"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/tvGithub"
+        tools:ignore="SpeakableTextPresentCheck">
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tlHome">
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/vp_follow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

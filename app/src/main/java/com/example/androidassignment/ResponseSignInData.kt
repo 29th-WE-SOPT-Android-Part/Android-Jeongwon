@@ -1,0 +1,14 @@
+package com.example.androidassignment
+
+data class ResponseSignInData(
+    val status : Int,
+    val success : Boolean,
+    val message : String,
+    val data : Data
+) {
+    data class Data(
+        val id : Int,
+        val name : String,
+        val email : String
+    )
+}

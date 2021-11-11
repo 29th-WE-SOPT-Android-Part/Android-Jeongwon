@@ -6,9 +6,8 @@
 
 # :white_check_mark: 실행화면
 <p float="left">
-<img src = "https://s7.ezgif.com/save/ezgif-7-75931ff250df.gif" width="30%" height="30%">
+<img src = "https://user-images.githubusercontent.com/49150980/141378552-36fa4ebf-a05c-4f91-bb18-96ad52e82d25.gif" width="30%" height="30%">
 </p>
-
 
 :exclamation: LEVEL1
 

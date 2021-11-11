@@ -3,16 +3,41 @@
 
 
 ### :star: WEEK3
+:exclamation: LEVEL1
+
+# :white_check_mark: 구현한 로직(코드)을 설명하는 내용
+## 1-1 과제에 디자인 적용하
+
+* EditText에 selector 활용하기(focus 되었을 때,안 되었을 때)-selector_et.xml
+  ```
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/et_rectangle" android:state_focused="false" />
+    <item android:drawable="@drawable/et_rectangle_pink" android:state_focused="true" />
+</selector>
+  ```
+
+* 이미지의 경우 Glide의 CircleCrop 기능 활용해서 넣어주기-ProfileFragment.kt 일부
+  ```
+  private fun initImage() {
+  Glide.with(this)
+  .load("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVFjOGNPXNc3JVvoxPf6VIpate-aDkyt6kxQ&usqp=CAU")
+  .circleCrop()
+  .into(binding.ivPhoto)
+  }
+  ```
+
 :exclamation: LEVEL2
 
 # :white_check_mark: 구현한 로직(코드)을 설명하는 내용
 ## 2-2 리스트에 각기 다른 이미지 넣기
 * app 단계의 build.gradle 추가
-```
+  ```
  implementation 'com.github.bumptech.glide:glide:4.12.0'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
-  ```
+  
+  
 * AndroidManifest.xml에 인터넷 사용권한을 추가
+
   ```
   <uses-permission android:name="android.permission.INTERNET" />
   ```

@@ -10,7 +10,7 @@
         android:id="@+id/tvTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="5dp"
         android:text="SOPTHub"
         android:textColor="#E91E63"
         android:textSize="50dp"
@@ -23,7 +23,7 @@
         android:id="@+id/ivTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="5dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvTitle"
@@ -35,7 +35,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="140dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="5dp"
         android:text="이름"
         android:textSize="20dp"
         android:textStyle="bold"
@@ -46,7 +46,7 @@
         android:id="@+id/tvName2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="5dp"
         android:layout_marginStart="20dp"
         android:text="최정원"
         android:textSize="20dp"
@@ -60,7 +60,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="140dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="5dp"
         android:text="나이"
         android:textSize="20dp"
         android:textStyle="bold"
@@ -71,7 +71,7 @@
         android:id="@+id/tvAge2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="5dp"
         android:layout_marginStart="20dp"
         android:text="25"
         android:textSize="20dp"
@@ -85,7 +85,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="140dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="5dp"
         android:text="MBTI"
         android:textSize="20dp"
         android:textStyle="bold"
@@ -96,7 +96,7 @@
         android:id="@+id/detailMbti"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="5dp"
         android:layout_marginStart="20dp"
         android:text="ISFJ"
         android:textSize="20dp"
@@ -109,7 +109,7 @@
         android:id="@+id/tvInfo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="5dp"
         android:text="안녕하세요~~ "
         android:textSize="20dp"
         android:textStyle="bold"
@@ -117,5 +117,43 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvMbti"/>
 
+
+    // Fragment 전환 버튼
+    <Button
+        android:id="@+id/btnFollower"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="팔로워 \n목록"
+        android:backgroundTint="#FA6195"
+        android:textColor="#ffffff"
+        app:layout_constraintTop_toBottomOf="@id/tvInfo"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnRepository"/>
+
+    <Button
+        android:id="@+id/btnRepository"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="레포지토 \n목록"
+        android:backgroundTint="#D38A1E"
+        android:textColor="#ffffff"
+        app:layout_constraintTop_toBottomOf="@id/tvInfo"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toEndOf="@id/btnFollower"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    // FragmentContainerView 추가
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/container_main"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnFollower" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

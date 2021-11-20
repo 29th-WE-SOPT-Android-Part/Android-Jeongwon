@@ -1,9 +1,7 @@
 package com.example.androidassignment
 
 data class ResponseSignUpData(
-    val status : Int,
-    val success : Boolean,
-    val message : String,
+    val responseData: ResponseData,
     val data : Data
 ) {
     data class Data(

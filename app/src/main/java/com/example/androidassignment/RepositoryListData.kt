@@ -1,6 +1,6 @@
 package com.example.androidassignment
 
-data class RepositoryData (
+data class RepositoryListData (
     val title : String,
     val content : String
 )

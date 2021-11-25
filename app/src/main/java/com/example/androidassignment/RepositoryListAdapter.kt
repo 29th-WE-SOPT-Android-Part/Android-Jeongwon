@@ -5,9 +5,9 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.androidassignment.databinding.ItemRepositoryListBinding
 
-class RepositoryAdapter : RecyclerView.Adapter<RepositoryAdapter.RepositoryViewHolder>() {
+class RepositoryListAdapter : RecyclerView.Adapter<RepositoryListAdapter.RepositoryViewHolder>() {
 
-    val RepositoryList = mutableListOf<RepositoryData>()
+    val RepositoryList = mutableListOf<RepositoryListData>()
 
     override fun onCreateViewHolder(
         parent: ViewGroup,
@@ -28,7 +28,7 @@ class RepositoryAdapter : RecyclerView.Adapter<RepositoryAdapter.RepositoryViewH
 
     class RepositoryViewHolder(private val binding: ItemRepositoryListBinding)
         : RecyclerView.ViewHolder(binding.root) {
-        fun onBind(data : RepositoryData) {
+        fun onBind(data : RepositoryListData) {
             binding.tvTitle.text = data.title
             binding.tvContent.text = data.content
         }

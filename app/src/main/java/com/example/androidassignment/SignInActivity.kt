@@ -3,22 +3,37 @@ package com.example.androidassignment
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
+import androidx.activity.result.ActivityResultLauncher
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import com.example.androidassignment.databinding.ActivitySignInBinding
 
 class SignInActivity : AppCompatActivity() {
     private lateinit var binding : ActivitySignInBinding
+    private lateinit var getResultText: ActivityResultLauncher<Intent>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         binding = ActivitySignInBinding.inflate(layoutInflater)
 
+        setResultSignUp()
         initLoginBtn()
         initRegisterBtn()
 
         setContentView(binding.root)
 
+    }
+
+    private fun setResultSignUp(){
+        getResultText = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result->
+            if (result.resultCode == RESULT_OK) {
+                val id = result.data?.getStringExtra("id") ?: ""
+                val password = result.data?.getStringExtra("password") ?: ""
+                binding.etId.setText(id)
+                binding.etPw.setText(password)
+            }
+        }
     }
 
 
@@ -40,7 +55,7 @@ class SignInActivity : AppCompatActivity() {
     private fun initRegisterBtn() {
         binding.btnRegister.setOnClickListener {
             val intent = Intent(this,SignUpActivity::class.java)
-            startActivity(intent)
+            getResultText.launch(intent)
         }
     }
 

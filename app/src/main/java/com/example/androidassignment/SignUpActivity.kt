@@ -1,5 +1,6 @@
 package com.example.androidassignment
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -27,6 +28,10 @@ class SignUpActivity : AppCompatActivity() {
             }
             // 유저가 항목을 다 채웠을 경우
             else {
+                val intent = Intent(this, SignInActivity::class.java)
+                intent.putExtra("id", binding.etId.text.toString())
+                intent.putExtra("password", binding.etPw.text.toString())
+                setResult(RESULT_OK, intent)
                 Toast.makeText(this, "회원가입 완료", Toast.LENGTH_SHORT).show()
                 finish()
             }

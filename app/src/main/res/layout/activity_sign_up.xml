@@ -7,7 +7,7 @@
     tools:context=".SignUpActivity">
 
     <TextView
-        android:id="@+id/tvTitle"
+        android:id="@+id/tv_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
@@ -20,7 +20,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/tvSignUp"
+        android:id="@+id/tv_sign_up"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="회원가입"
@@ -29,13 +29,13 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvTitle"  />
+        app:layout_constraintTop_toBottomOf="@id/tv_title"  />
 
 
     // 이름
 
     <TextView
-        android:id="@+id/tvName"
+        android:id="@+id/tv_name"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
@@ -45,10 +45,10 @@
         android:textStyle="bold"
         android:textSize="20dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvSignUp" />
+        app:layout_constraintTop_toBottomOf="@id/tv_sign_up" />
 
     <EditText
-        android:id="@+id/etName"
+        android:id="@+id/et_name"
         android:background="@drawable/border"
         android:padding="10dp"
         android:layout_width="0dp"
@@ -59,12 +59,12 @@
         android:hint="이름을 입력해주세요"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvName" />
+        app:layout_constraintTop_toBottomOf="@id/tv_name" />
 
     // 아이디
 
     <TextView
-        android:id="@+id/tvId"
+        android:id="@+id/tv_id"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
@@ -74,10 +74,10 @@
         android:textStyle="bold"
         android:textSize="20dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/etName" />
+        app:layout_constraintTop_toBottomOf="@id/et_name" />
 
     <EditText
-        android:id="@+id/etId"
+        android:id="@+id/et_id"
         android:background="@drawable/border"
         android:padding="10dp"
         android:layout_width="0dp"
@@ -88,13 +88,13 @@
         android:hint="아이디를 입력해주세요"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvId" />
+        app:layout_constraintTop_toBottomOf="@id/tv_id" />
 
 
     //비밀번호
 
     <TextView
-        android:id="@+id/tvPw"
+        android:id="@+id/tv_pw"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
@@ -104,10 +104,10 @@
         android:textStyle="bold"
         android:textSize="20dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/etId" />
+        app:layout_constraintTop_toBottomOf="@id/et_id" />
 
     <EditText
-        android:id="@+id/etPw"
+        android:id="@+id/et_pw"
         android:inputType="textPassword"
         android:background="@drawable/border"
         android:padding="10dp"
@@ -119,12 +119,12 @@
         android:hint="비밀번호를 입력해주세요"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvPw" />
+        app:layout_constraintTop_toBottomOf="@id/tv_pw" />
 
     //버튼
 
     <Button
-        android:id="@+id/btnJoinFinish"
+        android:id="@+id/btn_done_register"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"

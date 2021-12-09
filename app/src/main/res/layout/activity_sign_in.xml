@@ -8,7 +8,7 @@
 
 
     <TextView
-        android:id="@+id/tvTitle"
+        android:id="@+id/tv_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
@@ -21,7 +21,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/tvLogin"
+        android:id="@+id/tv_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="로그인"
@@ -30,12 +30,12 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvTitle"  />
+        app:layout_constraintTop_toBottomOf="@id/tv_title"  />
 
     // 아이디
 
     <TextView
-        android:id="@+id/tvId"
+        android:id="@+id/tv_id"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
@@ -45,10 +45,10 @@
         android:textStyle="bold"
         android:textSize="20dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvLogin" />
+        app:layout_constraintTop_toBottomOf="@id/tv_login" />
 
     <EditText
-        android:id="@+id/etId"
+        android:id="@+id/et_id"
         android:background="@drawable/border"
         android:padding="10dp"
         android:layout_width="0dp"
@@ -59,13 +59,13 @@
         android:hint="아이디를 입력해주세요"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvId" />
+        app:layout_constraintTop_toBottomOf="@id/tv_id" />
 
 
     //비밀번호
 
     <TextView
-        android:id="@+id/tvPw"
+        android:id="@+id/tv_pw"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
@@ -75,10 +75,10 @@
         android:textStyle="bold"
         android:textSize="20dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/etId" />
+        app:layout_constraintTop_toBottomOf="@id/et_id" />
 
     <EditText
-        android:id="@+id/etPw"
+        android:id="@+id/et_pw"
         android:inputType="textPassword"
         android:background="@drawable/border"
         android:padding="10dp"
@@ -90,24 +90,24 @@
         android:hint="비밀번호를 입력해주세요"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvPw" />
+        app:layout_constraintTop_toBottomOf="@id/tv_pw" />
 
     //버튼
 
     <Button
-        android:id="@+id/btnLogin"
+        android:id="@+id/btn_login"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
         android:layout_marginEnd="40dp"
         android:backgroundTint="#E91E63"
         android:text="로그인"
-        app:layout_constraintBottom_toTopOf="@id/btnJoin"
+        app:layout_constraintBottom_toTopOf="@id/btn_register"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/btnJoin"
+        android:id="@+id/btn_register"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"

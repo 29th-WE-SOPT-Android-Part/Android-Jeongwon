@@ -7,7 +7,7 @@
     tools:context=".HomeActivity">
 
     <TextView
-        android:id="@+id/tvTitle"
+        android:id="@+id/tv_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
@@ -20,18 +20,18 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/ivTitle"
+        android:id="@+id/iv_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title"
         android:src="@drawable/ic_launcher_foreground" />
 
     //이름
     <TextView
-        android:id="@+id/tvName"
+        android:id="@+id/tv_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="140dp"
@@ -40,23 +40,23 @@
         android:textSize="20dp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ivTitle" />
+        app:layout_constraintTop_toBottomOf="@+id/iv_title" />
 
     <TextView
-        android:id="@+id/tvName2"
+        android:id="@+id/tv_name_detail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:layout_marginStart="20dp"
         android:text="최정원"
         android:textSize="20dp"
-        app:layout_constraintStart_toEndOf="@id/tvName"
-        app:layout_constraintTop_toBottomOf="@+id/ivTitle"
+        app:layout_constraintStart_toEndOf="@id/tv_name"
+        app:layout_constraintTop_toBottomOf="@+id/iv_title"
         />
 
     //나이
     <TextView
-        android:id="@+id/tvAge"
+        android:id="@+id/tv_age"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="140dp"
@@ -65,23 +65,23 @@
         android:textSize="20dp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvName" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_name" />
 
     <TextView
-        android:id="@+id/tvAge2"
+        android:id="@+id/tv_age_detail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:layout_marginStart="20dp"
         android:text="25"
         android:textSize="20dp"
-        app:layout_constraintStart_toEndOf="@id/tvAge"
-        app:layout_constraintTop_toBottomOf="@+id/tvName2"
+        app:layout_constraintStart_toEndOf="@id/tv_age"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name_detail"
         />
 
     //MBTI
     <TextView
-        android:id="@+id/tvMbti"
+        android:id="@+id/tv_mbti"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="140dp"
@@ -90,23 +90,23 @@
         android:textSize="20dp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvAge" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_age" />
 
     <TextView
-        android:id="@+id/detailMbti"
+        android:id="@+id/tv_mbti_detail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:layout_marginStart="20dp"
         android:text="ISFJ"
         android:textSize="20dp"
-        app:layout_constraintStart_toEndOf="@id/tvMbti"
-        app:layout_constraintTop_toBottomOf="@+id/tvAge2"
+        app:layout_constraintStart_toEndOf="@id/tv_mbti"
+        app:layout_constraintTop_toBottomOf="@+id/tv_age_detail"
         />
 
     //간단한 자기소개
     <TextView
-        android:id="@+id/tvInfo"
+        android:id="@+id/tv_info"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
@@ -115,7 +115,7 @@
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvMbti"/>
+        app:layout_constraintTop_toBottomOf="@id/tv_mbti"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

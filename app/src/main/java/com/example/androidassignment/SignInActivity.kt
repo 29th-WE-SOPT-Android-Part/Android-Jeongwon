@@ -45,7 +45,7 @@ class SignInActivity : AppCompatActivity() {
             }
             // 유저가 항목을 다 채웠을 경우
             else {
-                Toast.makeText(this, "환영합니다!", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "${binding.etId.text}님 환영합니다!", Toast.LENGTH_SHORT).show()
                 val intent = Intent(this, HomeActivity::class.java)
                 startActivity(intent)
             }

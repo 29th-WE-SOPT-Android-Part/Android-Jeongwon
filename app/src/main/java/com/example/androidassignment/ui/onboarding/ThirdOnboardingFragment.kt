@@ -6,11 +6,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.navigation.fragment.findNavController
-import com.example.androidassignment.R
-import com.example.androidassignment.databinding.FragmentFirstOnboardingBinding
 import com.example.androidassignment.databinding.FragmentThirdOnboardingBinding
-import com.example.androidassignment.ui.signin.SignInActivity
+import com.example.androidassignment.ui.login.SignInActivity
 
 class ThirdOnboardingFragment : Fragment() {
     private var _binding: FragmentThirdOnboardingBinding? = null

@@ -1,4 +1,4 @@
-package com.example.androidassignment.ui.signin
+package com.example.androidassignment.ui.login
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -7,7 +7,7 @@ import android.util.Log
 import android.widget.Toast
 import com.example.androidassignment.data.RequestSignInData
 import com.example.androidassignment.data.ResponseSignInData
-import com.example.androidassignment.ui.signup.SignUpActivity
+import com.example.androidassignment.data.SOPTSharedPreferences
 import com.example.androidassignment.data.ServiceCreator
 import com.example.androidassignment.databinding.ActivitySignInBinding
 import com.example.androidassignment.ui.home.HomeActivity
@@ -28,6 +28,8 @@ class SignInActivity : AppCompatActivity() {
         }
 
         initJoinBtn()
+//        getSignIn()
+        initBtnAutoLoginEvent()
 
         setContentView(binding.root)
 
@@ -67,6 +69,24 @@ class SignInActivity : AppCompatActivity() {
         binding.btnJoin.setOnClickListener {
             val intent = Intent(this, SignUpActivity::class.java)
             startActivity(intent)
+        }
+    }
+
+//    private fun getSignIn() {
+//        SOPTSharedPreferences.setAutoLogin(this, true)
+//        Toast.makeText(this@SignInActivity, "로그인 성공!", Toast.LENGTH_SHORT).show()
+//        val intent = Intent(this@SignInActivity, HomeActivity::class.java)
+//        startActivity(intent)
+//        finish()
+//
+//    }
+
+    private fun initBtnAutoLoginEvent() {
+        binding.btnAutoLogin.setOnClickListener {
+            SOPTSharedPreferences.getAutoLogin(this)
+            Toast.makeText(this@SignInActivity, "자동로그인 되었습니다.", Toast.LENGTH_SHORT).show()
+            startActivity(Intent(this@SignInActivity, HomeActivity::class.java))
+            finish()
         }
     }
 }

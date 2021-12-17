@@ -1,5 +1,6 @@
 package com.example.androidassignment.ui.profile
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -8,6 +9,7 @@ import android.view.ViewGroup
 import com.bumptech.glide.Glide
 import com.example.androidassignment.R
 import com.example.androidassignment.databinding.FragmentProfileBinding
+import com.example.androidassignment.ui.login.SignUpActivity
 
 class ProfileFragment : Fragment() {
 
@@ -24,6 +26,7 @@ class ProfileFragment : Fragment() {
 
         initImage()
         initTransactionEvent()
+        initBtnSettingEvent()
 
         return binding.root
     }
@@ -65,6 +68,14 @@ class ProfileFragment : Fragment() {
             transaction?.commit()
         }
     }
+
+    private fun initBtnSettingEvent(){
+        binding.ivSetting.setOnClickListener {
+            val intent = Intent(this@ProfileFragment.context, SettingActivity::class.java)
+            startActivity(intent)
+        }
+    }
+
 
 
 }

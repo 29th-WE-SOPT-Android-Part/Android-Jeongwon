@@ -1,4 +1,4 @@
-package com.example.androidassignment.ui.signup
+package com.example.androidassignment.ui.login
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

@@ -6,8 +6,9 @@ Android-Jeongwon
 
 ## 실행화면
 
-
-
+<p float="left">
+<img src=https://user-images.githubusercontent.com/49150980/146558382-e4c71b40-3848-47e0-8640-9567d4bf6dde.gif width="30%" height="30%">
+</p>
 
 
 ## :white_check_mark: Lvel 1 필수과제
@@ -147,9 +148,13 @@ private fun initBtnAutoLoginEvent() {
 
 - 본인이 사용하는 Util 클래스 코드 및 패키징 방식 리드미에 정리
 
-
-
 패키징 방식
+
+<p>
+<img width="280" alt="패키징 방식" src="https://user-images.githubusercontent.com/49150980/146558516-42cd1d2f-802c-49ba-bd31-f73331497a6f.png">
+</p>
+
+
 
 - data: 데이터클래스 파일들과 서버 통신에 필요한 파일들을 넣었습니다.
 - ui: 화면(Activity, Fragment)를 구성하는 코드를 넣었습니다. 또 이 안에서 각각의 메뉴별로 패키징했습니다.
@@ -162,12 +167,3 @@ Util 클래스의 경우 ViewExt.kt(토스트 메세지 확장함수) 파일을 
 - 온보딩 화면 만들기(NavigationComponent 활용)
 - SharedPreferences를 활용하여 자동로그인/자동로그인 해제 구현하는 로직
 - 확장함수와 Util 클래스의 필요성
-
-
-
-
-
-
-
-
-

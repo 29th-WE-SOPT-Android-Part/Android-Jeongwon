@@ -1,4 +1,4 @@
-package com.example.androidassignment
+package com.example.androidassignment.ui.home
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,6 +6,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.bumptech.glide.Glide
+import com.example.androidassignment.R
+import com.example.androidassignment.TabFollowerFragment
+import com.example.androidassignment.TabFollowingFragment
+import com.example.androidassignment.ui.home.adapter.TabViewPagerAdapter
 import com.example.androidassignment.databinding.FragmentHomeBinding
 import com.google.android.material.tabs.TabLayoutMediator
 

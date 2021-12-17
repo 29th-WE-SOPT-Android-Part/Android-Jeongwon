@@ -1,6 +1,6 @@
-package com.example.androidassignment
+package com.example.androidassignment.data
 
-data class ResponseSignUpData(
+data class ResponseSignInData(
     val responseData: ResponseData,
     val data : Data
 ) {

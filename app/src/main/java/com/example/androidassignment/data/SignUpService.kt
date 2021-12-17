@@ -1,4 +1,4 @@
-package com.example.androidassignment
+package com.example.androidassignment.data
 
 import retrofit2.Call
 import retrofit2.http.Body

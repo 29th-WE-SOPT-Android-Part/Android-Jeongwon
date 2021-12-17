@@ -1,9 +1,10 @@
-package com.example.androidassignment
+package com.example.androidassignment.ui.profile.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.example.androidassignment.data.FollowerListData
 import com.example.androidassignment.databinding.ItemFollowerListBinding
 
 class FollowerListAdapter : RecyclerView.Adapter<FollowerListAdapter.FollowerViewHolder>() {

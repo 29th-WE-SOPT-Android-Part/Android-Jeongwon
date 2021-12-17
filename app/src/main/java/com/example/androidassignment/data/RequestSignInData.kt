@@ -1,4 +1,4 @@
-package com.example.androidassignment
+package com.example.androidassignment.data
 
 import com.google.gson.annotations.SerializedName
 

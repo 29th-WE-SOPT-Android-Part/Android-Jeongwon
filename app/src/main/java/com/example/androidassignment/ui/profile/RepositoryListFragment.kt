@@ -1,11 +1,13 @@
-package com.example.androidassignment
+package com.example.androidassignment.ui.profile
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.androidassignment.data.RepositoryListData
 import com.example.androidassignment.databinding.FragmentRepositoryListBinding
+import com.example.androidassignment.ui.profile.adapter.RepositoryListAdapter
 
 
 class RepositoryListFragment : Fragment() {

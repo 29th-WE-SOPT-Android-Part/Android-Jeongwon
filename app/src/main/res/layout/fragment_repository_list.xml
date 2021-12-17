@@ -5,7 +5,7 @@
     android:layout_gravity="center"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RepositoryListFragment">
+    tools:context=".ui.profile.RepositoryListFragment">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_repository"

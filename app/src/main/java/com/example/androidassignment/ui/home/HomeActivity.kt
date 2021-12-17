@@ -1,9 +1,13 @@
-package com.example.androidassignment
+package com.example.androidassignment.ui.home
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.viewpager2.widget.ViewPager2
+import com.example.androidassignment.ui.home.adapter.HomeViewPagerAdapter
+import com.example.androidassignment.ui.profile.ProfileFragment
+import com.example.androidassignment.R
 import com.example.androidassignment.databinding.ActivityHomeBinding
+import com.example.androidassignment.ui.camera.CameraFragment
 
 class HomeActivity : AppCompatActivity() {
 

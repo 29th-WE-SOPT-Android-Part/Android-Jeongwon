@@ -1,8 +1,9 @@
-package com.example.androidassignment
+package com.example.androidassignment.ui.profile.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.androidassignment.data.RepositoryListData
 import com.example.androidassignment.databinding.ItemRepositoryListBinding
 
 class RepositoryListAdapter : RecyclerView.Adapter<RepositoryListAdapter.RepositoryViewHolder>() {

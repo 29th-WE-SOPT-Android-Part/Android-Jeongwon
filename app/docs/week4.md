@@ -84,8 +84,8 @@
           .addConverterFactory(GsonConverterFactory.create())
           .build()
   
-      val SignInService: SignInService = retrofit.create(com.example.androidassignment.SignInService::class.java)
-      val SignUpService: SignUpService = retrofit.create(com.example.androidassignment.SignUpService::class.java)
+      val SignInService: SignInService = retrofit.create(com.example.androidassignment.data.SignInService::class.java)
+      val SignUpService: SignUpService = retrofit.create(com.example.androidassignment.data.SignUpService::class.java)
   }
   ```
 

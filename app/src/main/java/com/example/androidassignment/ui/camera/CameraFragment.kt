@@ -1,4 +1,4 @@
-package com.example.androidassignment
+package com.example.androidassignment.ui.camera
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

@@ -1,4 +1,4 @@
-package com.example.androidassignment
+package com.example.androidassignment.data
 
 data class RepositoryListData (
     val title : String,

@@ -1,9 +1,12 @@
-package com.example.androidassignment
+package com.example.androidassignment.ui.signup
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
+import com.example.androidassignment.data.RequestSignUpData
+import com.example.androidassignment.data.ResponseSignUpData
+import com.example.androidassignment.data.ServiceCreator
 import com.example.androidassignment.databinding.ActivitySignUpBinding
 import retrofit2.Call
 import retrofit2.Callback

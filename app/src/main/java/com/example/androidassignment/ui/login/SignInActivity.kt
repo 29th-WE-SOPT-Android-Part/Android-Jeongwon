@@ -7,7 +7,7 @@ import android.util.Log
 import android.widget.Toast
 import com.example.androidassignment.data.RequestSignInData
 import com.example.androidassignment.data.ResponseSignInData
-import com.example.androidassignment.data.SOPTSharedPreferences
+import com.example.androidassignment.util.SOPTSharedPreferences
 import com.example.androidassignment.data.ServiceCreator
 import com.example.androidassignment.databinding.ActivitySignInBinding
 import com.example.androidassignment.ui.home.HomeActivity

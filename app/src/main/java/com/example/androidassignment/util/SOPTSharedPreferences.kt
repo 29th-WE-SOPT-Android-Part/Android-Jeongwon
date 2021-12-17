@@ -1,4 +1,4 @@
-package com.example.androidassignment.data
+package com.example.androidassignment.util
 
 import android.content.Context
 

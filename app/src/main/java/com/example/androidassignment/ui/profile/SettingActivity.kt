@@ -1,10 +1,8 @@
 package com.example.androidassignment.ui.profile
 
-import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
-import com.example.androidassignment.data.SOPTSharedPreferences
+import com.example.androidassignment.util.SOPTSharedPreferences
 import com.example.androidassignment.databinding.ActivitySettingBinding
 import com.example.androidassignment.util.shortToast
 

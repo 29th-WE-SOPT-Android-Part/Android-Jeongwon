@@ -31,6 +31,4 @@ class FirstOnboardingFragment : Fragment() {
         _binding = null
     }
 
-
-
 }

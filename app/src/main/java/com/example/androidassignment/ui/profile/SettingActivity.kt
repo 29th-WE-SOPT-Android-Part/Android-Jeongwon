@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Toast
 import com.example.androidassignment.data.SOPTSharedPreferences
 import com.example.androidassignment.databinding.ActivitySettingBinding
+import com.example.androidassignment.util.shortToast
 
 class SettingActivity : AppCompatActivity() {
     private lateinit var binding: ActivitySettingBinding
@@ -19,9 +20,9 @@ class SettingActivity : AppCompatActivity() {
         setContentView(binding.root)
     }
 
-    private fun initBtnOffAutoLoginEvent(){
+    private fun initBtnOffAutoLoginEvent() {
         binding.btnOffAutoLogin.setOnClickListener {
-            Toast.makeText(this, "자동 로그인 해제", Toast.LENGTH_SHORT).show()
+            shortToast("자동 로그인 해제")
             SOPTSharedPreferences.removeAutoLogin(this)
         }
     }

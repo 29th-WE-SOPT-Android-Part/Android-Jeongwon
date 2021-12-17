@@ -11,6 +11,7 @@ import com.example.androidassignment.data.SOPTSharedPreferences
 import com.example.androidassignment.data.ServiceCreator
 import com.example.androidassignment.databinding.ActivitySignInBinding
 import com.example.androidassignment.ui.home.HomeActivity
+import com.example.androidassignment.util.shortToast
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -84,7 +85,7 @@ class SignInActivity : AppCompatActivity() {
     private fun initBtnAutoLoginEvent() {
         binding.btnAutoLogin.setOnClickListener {
             SOPTSharedPreferences.getAutoLogin(this)
-            Toast.makeText(this@SignInActivity, "자동로그인 되었습니다.", Toast.LENGTH_SHORT).show()
+            shortToast("자동로그인 되었습니다.")
             startActivity(Intent(this@SignInActivity, HomeActivity::class.java))
             finish()
         }
